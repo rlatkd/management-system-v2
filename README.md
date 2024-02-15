@@ -8,3 +8,4 @@ https://start.spring.io/
 
 cmd
 - ./gradlew bootRun
+- npm run dev
