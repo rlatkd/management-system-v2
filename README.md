@@ -8,4 +8,5 @@ https://start.spring.io/
 
 cmd
 - ./gradlew bootRun
+- npm create vue
 - npm run dev
