@@ -1,14 +1,35 @@
-<!-- <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script> -->
-
 <template>
   <div class="home">
     <a href="/user">사용자 목록</a>
+    <button @click="getData">데이터 호출</button>
   </div>
 </template>
 
+<script>
+import axios from 'axios'
+export default {
+  name: 'HomeView',
+  methods: {
+    getData() {
+      axios
+      .get('http://localhost:8080/')
+      .then((res) => {
+        console.log(res)
+      })
+      .catch((err) => {
+        console.log(err)
+      }
+      )
+    }
+  }
+}
+
+</script>
+
 <style scoped>
+.home {
+  text-align: center;
+}
 
 a {
   color: black;
