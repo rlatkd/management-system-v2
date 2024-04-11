@@ -1,0 +1,7 @@
+- gradle
+- spring boot v3.2.5 (SNAPSHOT)
+- Spring Web
+- Lombok
+- MyBatis Framework
+- MariaDB Driver
+- Spring Boot Devtools
